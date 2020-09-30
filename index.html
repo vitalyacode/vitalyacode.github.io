@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html class="no-js"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header><h1 style="text-align: center; color: rgb(236, 235, 235);">My Library</h2></header>
+        <div class="form-style" id="add-book-form">
+                <div class="close-button" id="close-form">x</div>
+                <div class="inputs"><textarea placeholder='Title' type="text" id="title-input"></textarea></div>
+                <div class="inputs"><input placeholder='Author' type="text" id="author-input"></div>
+                <div class="inputs"><input placeholder='Number of pages' type="number" id="number-input" value=0></div>
+                <div class="inputs">Have you read this book?<input type="checkbox" id="read-input"></div>
+                <button class="submit-btn" id="add-book-button">Add book</button>
+        </div>
+        <div class="form-style" id="book-description">
+            <div class="close-button" id="close-description">x</div>
+            <div class="inputs"><textarea type="text" value="" id="desc-title" placeholder='Title'></textarea></div>
+            <div class="inputs"><input type="text" value="" id="desc-author" placeholder='Author'></div>
+            <div class="inputs"><input type="number" value="" id="desc-number" placeholder='Number of pages'></div>
+            <button class="submit-btn" id="edit-book-btn">Edit book</button>
+        </div>
+        <div id="books">
+            <div id="add-book" class="book"><span id="add-book-sign"><img style='height: 100%; width: 100%; object-fit: contain' src="plus.png" alt=""></span></div>
+        </div>
+        
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
